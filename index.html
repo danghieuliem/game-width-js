@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./index.css">
+  <title>Background</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="mainDisplay">
+      <canvas id="mainCanvas"></canvas>
+      <canvas id="player"></canvas>
+    </div>
+    <p>Game speed: <span id="showGameSpeed"></span></p>
+    <input type="range" min="0" max="20" value="5" class="slider" id="slider">
+
+    <div class="control">
+      <label for="animates">Choose Animations: </label>
+      <select name="animations" id="animations">
+        <option value="idle">Idle</option>
+        <option value="jump">Jump</option>
+        <option value="fall">Fall</option>
+        <option value="run">Run</option>
+        <option value="dizzy">Dizzy</option>
+        <option value="sit">Sit</option>
+        <option value="roll">Roll</option>
+        <option value="bite">Bite</option>
+        <option value="ko">Ko</option>
+        <option value="getHit">Get Hit</option>
+      </select>
+    </div>
+
+  </div>
+
+
+  <script src="./modules/background.js"></script>
+  <script src="./modules/controller.js"></script>
+  <script src="./modules/player.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
